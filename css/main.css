@@ -1,0 +1,37 @@
+/* @import url('../css/base/button.css'); */
+
+@import url('../css/base/text-box.css');
+@import url('../css/base/icon.css');
+@import url('../css/base/combobox.css');
+body {
+    font-family: MISAGoogleSans;
+    font-size: 13px;
+    margin: 0;
+}
+
+@font-face {
+    font-family: MISAGoogleSans;
+    src: url('../content/font/GoogleSans-Regular.otf');
+}
+
+@font-face {
+    font-family: MISAGoogleSans-Bold;
+    src: url('../content/font/GoogleSans-Bold.otf');
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.margin-left {
+    margin-left: 10px;
+    text-align: left;
+}

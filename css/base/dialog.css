@@ -1,0 +1,196 @@
+.dialog {
+    width: 1000px;
+    height: 750px;
+    border: 24px solid #ccc;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    background-color: #fff;
+    z-index: 999;
+}
+
+.dialog .header-dialog {
+    display: flex;
+    height: 40px;
+    width: 500px;
+    text-transform: uppercase;
+    font-size: 20px;
+    align-items: center;
+    margin: 16px 0 16px 24px;
+    white-space: nowrap;
+}
+
+.dialog .image-dialog {
+    position: absolute;
+    width: 250px;
+    height: 610px;
+    margin-left: 24px;
+    margin-right: 24px;
+    z-index: 0;
+}
+
+.dialog .image-dialog .avata-dialog {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: orange;
+    z-index: 1;
+    margin: 24px 0 0 24px;
+}
+
+.dialog .content-dialog {
+    max-width: 800px;
+    height: 610px;
+    float: left;
+    margin-left: 298px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.dialog .content-dialog .text-content {
+    text-transform: uppercase;
+    font-size: 15px;
+    margin: 0 0 5px 0;
+}
+
+.dialog .content-dialog .tag {
+    height: 5px;
+    width: 100px;
+    background-color: green;
+    margin: 0 0 5px 0;
+    /* margin-left: 16px; */
+}
+
+.dialog .content-dialog .info {
+    float: left;
+    margin: 0 16px 16px 0;
+}
+
+.dialog .content-dialog .info>label {
+    margin: 15px 0 15px 0;
+    white-space: nowrap;
+}
+
+.dialog .content-dialog .info>input {
+    width: 300px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.text-box-default {
+    height: 35px;
+    border: 1px solid #bbbbbb;
+    padding-right: 16px;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.textbox {
+    margin-top: 10px;
+    width: 300px;
+}
+
+.textbox .textbox-icon {
+    width: 20px;
+    height: 20px;
+    border: none;
+    display: block;
+    z-index: 1;
+    margin-left: 274px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.textbox input {
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.dialog .content-dialog .info .combobox-info {
+    position: relative;
+    display: flex;
+}
+
+.dialog .content-dialog .info .combobox-info .combobox-input {
+    display: flex;
+    font-size: 15px;
+    height: 30px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    align-items: center;
+    margin-top: 3px;
+    margin-left: 4px;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.dialog .content-dialog .info .combobox-info .btn-combobox-info {
+    position: absolute;
+    background-color: #fff;
+    margin-left: 276px;
+    width: 29px;
+    height: 29px;
+    border-radius: 0 4px 4px 0;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin-top: 3px;
+    z-index: 0;
+}
+
+.dialog .sidebar-dialog {
+    margin-top: 626px;
+    width: 1000px;
+    height: 69px;
+    background-color: rgb(226, 221, 221);
+}
+
+.dialog .sidebar-dialog .bottom-sidebade {
+    margin-left: 830px;
+    padding-top: 20px;
+}
+
+.dialog .sidebar-dialog .btn-delete {
+    height: 30px;
+    width: 70px;
+    display: flex;
+    position: absolute;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(226, 221, 221);
+    cursor: pointer;
+    margin-left: 10px;
+    align-items: center;
+    font-weight: bold;
+}
+
+.dialog .sidebar-dialog .save {
+    height: 30px;
+    width: 70px;
+    position: absolute;
+    float: left;
+    margin-left: 86px;
+    background-color: green;
+    align-items: center;
+    display: flex;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.dialog .sidebar-dialog .save .btn-save {
+    float: left;
+    margin-left: 25px;
+    position: absolute;
+    background-color: green;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}

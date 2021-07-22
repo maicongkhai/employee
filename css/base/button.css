@@ -1,0 +1,46 @@
+.button {
+    height: 40px;
+    border-radius: 4px;
+    color: #ffffff;
+    padding-left: 24px;
+    padding-right: 24px;
+    text-align: center;
+    background-color: #019160;
+    line-height: 40px;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: #2FBE8E;
+}
+
+button.button {
+    display: flex;
+    align-items: center;
+    outline: none;
+    border: none;
+}
+
+.button .btn-icon {
+    width: 16px;
+    height: 16px;
+    box-sizing: border-box;
+    display: block;
+    margin-right: 8px;
+    flex-shrink: 0;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.button .btn-text {
+    white-space: nowrap;
+}
+
+.button:active {
+    background-color: #01B075;
+}
+
+.button .btn-icon-employee {
+    background-image: url('../../content/icon/add.png');
+}

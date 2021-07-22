@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phần mềm quản lí nhà hàng</title>
+    <link rel="Stylesheet" href="../layout/header.css" />
+    <link rel="Stylesheet" href="../layout/content.css" />
+    <link rel="Stylesheet" href="../layout/menu.css" />
+    <link rel="stylesheet" href="../content/font/fontawesome-5.15.1/css/all.min.css">
+    <link rel="Stylesheet" href="../css/main.css" />
+    <link rel="Stylesheet" href="../layout/paging.css" />
+    <link rel="Stylesheet" href="../css/base/dialog.css" />
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-left">
+            <div class="toggle"></div>
+            <div class="logo"></div>
+
+        </div>
+        <div class="header-right">
+            <div class="right-left">
+                <div class="right-left-text">Nhà hàng Biển Đông</div>
+                <button class="right-left-btn"><i class="fas fa-chevron-down"></i></button>
+            </div>
+            <div class="right-right">
+                <div class="right-right-img"><img src="../content/icon/avatar-default.png" /></div>
+                <div class="right-right-text">Nguyễn Văn Mạnh</div>
+                <button class="right-right-btn"><img src="../content/icon/option.png"/></button>
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="menu-item ">
+            <div class="menu-icon menu-icon-dasbord "></div>
+            <div class="menu-item-text">Tổng quan</div>
+
+        </div>
+        <div class="menu-item menu-item-active">
+            <div class="menu-icon menu-icon-report "></div>
+            <div class="menu-item-text">Báo cáo</div>
+
+        </div>
+        <div class="menu-item">
+            <div class="menu-icon menu-icon-putcharse"></div>
+            <div class="menu-item-text">Mua hàng</div>
+
+        </div>
+        <div class="menu-item">
+            <div class="menu-icon menu-icon-employee"></div>
+            <div class="menu-item-text">Danh mục nhân viên</div>
+
+        </div>
+        <div class="menu-item">
+            <div class="menu-icon menu-icon-setting"></div>
+            <div class="menu-item-text">Thiết lập hệ thống</div>
+
+        </div>
+    </div>
+    <div class="content">
+        <div class="content-top">
+            <div class="top-left">
+                <div class="topleft-text">
+                    Danh sách nhân viên
+                </div>
+                <div class="topleft-textbox">
+                    <div class="textbox-icon icon-search"></div>
+                    <input type="text" class=" text-box-default textbox-with-icon" placeholder="Tìm kiếm theo Mã,tên hoặc số điện thoại">
+                </div>
+                <div class="topleft-combobox">
+                    <div class="comboboxtext">Tất cả phòng ban</div>
+                    <button class="btn-combobox"><i class="fas fa-chevron-down"></i></button>
+                </div>
+                <div class="combobox-postion">
+                    <div class="comboboxtext-position ">Tất cả vị trí</div>
+                    <button class="btn-combobox-position "><i class="fas fa-chevron-down"></i></button>
+                </div>
+            </div>
+            <div class="top-right">
+                <div class="btn-right">
+                    <button class="button">
+                        <div class="btn-icon btn-icon-employee"></div>
+                        <div class="btn-text" id="btnAddOnClick">Thêm mới nhân viên</div>
+                    </button>
+                </div>
+                <div class="btn-load">
+                    <button class="load">
+                        <img src="../content/icon/refresh.png" style="width: 30px; height: 30px;">
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        <div class="tables">
+            <table class="table" style="width: 100%;">
+                <thead>
+                    <th>Mã nhân viên</th>
+                    <th>Họ và tên</th>
+                    <th>Giới tính</th>
+                    <th>Ngày sinh</th>
+                    <th>Điện thoại</th>
+                    <th>Email</th>
+                    <th>Chức vụ</th>
+                    <th>Phòng ban</th>
+                    <th>Mức lương cơ bản</th>
+                    <th>Tình trạng cơ bản</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>NV-532408</td>
+                        <td>Hồ Văn Long</td>
+                        <td></td>
+                        <td>11/08/1978</td>
+                        <td>094058449</td>
+                        <td>cuon@example.com</td>
+                        <td>Giám đốc</td>
+                        <td>Phòng nhân sự</td>
+                        <td class="text-align-right">17.739.391</td>
+                        <td>Đang thử việc</td>
+                    </tr>
+                    <tr class="click">
+                        <td>NV-548257</td>
+                        <td>Trương Thị Huyền</td>
+                        <td>Khác</td>
+                        <td>25/05/1972</td>
+                        <td class="text-align-right">0979366129</td>
+                        <td>misa643@example.com</td>
+                        <td>Thu ngân</td>
+                        <td>Phòng đào tạo</td>
+                        <td></td>
+                        <td>Đang thử việc</td>
+                    </tr>
+                    <tr>
+                        <td>NV-436028</td>
+                        <td>Trần Thị Thảo</td>
+                        <td>Khác</td>
+                        <td>15/08/1952</td>
+                        <td>0945220829</td>
+                        <td>misa993@example.com</td>
+                        <td>Giám đốc</td>
+                        <td>Phòng công nghệ</td>
+                        <td class="text-align-right">15.509.169</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>NV-247682</td>
+                        <td>Mai Thị Bích</td>
+                        <td></td>
+                        <td>17/06/2993</td>
+                        <td>0995194059</td>
+                        <td>kute@example.com</td>
+                        <td>Thu ngân</td>
+                        <td>Phòng marketing</td>
+                        <td class="text-align-right">16.509.169</td>
+                        <td>Đang thử việc</td>
+                    </tr>
+                    <tr>
+                        <td>NV-834252</td>
+                        <td>Đinh Thị Thu</td>
+                        <td></td>
+                        <td>08/11/1953</td>
+                        <td>0955405910</td>
+                        <td>kute28@example.com</td>
+                        <td>Giám đốc</td>
+                        <td>Phòng nhân sự</td>
+                        <td class="text-align-right">22.727.603</td>
+                        <td>Đã nghỉ việc</td>
+                    </tr>
+                    <tr>
+                        <td>NV-592609</td>
+                        <td>Nguyễn Khánh Bình</td>
+                        <td>Nam</td>
+                        <td>05/03/1952</td>
+                        <td>0952317276</td>
+                        <td>huong111@example.com</td>
+                        <td>Giám đốc</td>
+                        <td>Phòng nhân sự</td>
+                        <td class="text-align-right">10.235.521</td>
+                        <td>Đang làm việc</td>
+                    </tr>
+                    <tr>
+                        <td>NV-803450</td>
+                        <td>Nông Văn Khương</td>
+                        <td></td>
+                        <td>06/12/1991</td>
+                        <td>0918192456</td>
+                        <td>hoangkute@example.com</td>
+                        <td>Nhân viên Marketing</td>
+                        <td>Phòng công nghệ</td>
+                        <td class="text-align-right">22.354.157</td>
+                        <td>Đã nghỉ hưu</td>
+                    </tr>
+                    <tr>
+                        <td>NV-207243</td>
+                        <td>Trần Việt Duy</td>
+                        <td></td>
+                        <td>25/05/1993</td>
+                        <td>0915087412</td>
+                        <td>bhqrxaln2996@example.com</td>
+                        <td>Thu Ngân</td>
+                        <td>Phòng công nghệ</td>
+                        <td class="text-align-right">25.136.796</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>NV-361946</td>
+                        <td>Nguyễn Thị Thư</td>
+                        <td>Nam</td>
+                        <td>09/05/1979</td>
+                        <td>0903267645</td>
+                        <td>tuankute@example.com</td>
+                        <td>Thu ngân</td>
+                        <td>Phòng marketing</td>
+                        <td class="text-align-right">17.611.796</td>
+                        <td>Đang thử việc</td>
+                    </tr>
+                    <tr>
+                        <td>NV-205419</td>
+                        <td>Trần thị Chung</td>
+                        <td>Nữ</td>
+                        <td>18/01/1950</td>
+                        <td>0906737323</td>
+                        <td>tranpi9@example.com</td>
+                        <td>Giám đốc</td>
+                        <td>Phòng marketing</td>
+                        <td class="text-align-right">12.436.796</td>
+                        <td>Đã nghỉ việc</td>
+                    </tr>
+                    <tr>
+                        <td>NV-007363</td>
+                        <td>Nguyễn Ngọc Lệ</td>
+                        <td>Khác</td>
+                        <td>01/01/1970</td>
+                        <td>0960091247</td>
+                        <td></td>
+                        <td>Nhân viên Marketing</td>
+                        <td>Phòng đào tạo</td>
+                        <td class="text-align-right">21.345.796</td>
+                        <td>Đã nghỉ việc</td>
+                    </tr>
+                    <tr>
+                        <td>NV-311169</td>
+                        <td>Hoàng Mỹ Quỳnh</td>
+                        <td>Nam</td>
+                        <td>07/04/1976</td>
+                        <td>0906666545</td>
+                        <td>tranpir989@example.com</td>
+                        <td>Nhân viên Marketing</td>
+                        <td>Phòng marketing</td>
+                        <td class="text-align-right">29.136.796</td>
+                        <td>Đã nghỉ việc</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="content-bottom">
+            <div class="scoller"></div>
+            <div class="paging-bar">
+                <div class="paging-bar-left"> Hiển thị 1-10/1000 nhân viên</div>
+                <div class="paging-bar-center">
+                    <div class="first-page"></div>
+                    <div class="prev-page"></div>
+                    <div class="page page-click">1</div>
+                    <div class="page">2</div>
+                    <div class="page">3</div>
+                    <div class="page">4</div>
+                    <div class="next-page"></div>
+                    <div class="last-page"></div>
+                </div>
+                <div class="paging-bar-right">10 nhân viên /trang</div>
+            </div>
+        </div>
+    </div>
+    <div class="dialog" id="id-dialog" hidden>
+        <div class="header-dialog">
+            Thông tin nhân viên
+        </div>
+        <div class="image-dialog">
+            <div class="avata-dialog"></div>
+        </div>
+        <div class="content-dialog">
+            <div>
+                <div class="text-content">a.Thông tin chung:</div>
+                <div class="tag"></div>
+            </div>
+            <div>
+                <div class="info">
+                    <label>Mã nhân viên: (<i style="color: red; font-size: 15px;">*</i> )</label>
+                    <br>
+                    <input type="text" placeholder="NV000999">
+                </div>
+                <div class="info">
+                    <label>Họ và tên: (<i style="color: red; font-size: 15px;">*</i> )</label>
+                    <br>
+                    <input type="text" placeholder="Nguyễn Văn Mạnh">
+                </div>
+            </div>
+            <div>
+                <div class="info">
+                    <label>Ngày sinh:</label>
+                    <br>
+                    <div class="textbox">
+                        <input type="text" class=" text-box-default textbox-with-icon" placeholder="11/08/1989">
+                        <div class="textbox-icon "><i class="far fa-calendar"></i></div>
+                    </div>
+                </div>
+                <div class="info">
+                    <label>Giới tính:</label>
+                    <br>
+                    <div class="combobox-info">
+                        <div class="combobox-input">Nam</div>
+                        <button class="btn-combobox-info"><i class="fas fa-chevron-down"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="info">
+                    <label>Số CMND/Căn cước:(<i style="color: red; font-size: 15px;">*</i> )</label>
+                    <br>
+                    <input type="text" placeholder="034099001234">
+                </div>
+                <div class="info">
+                    <label>Ngày cấp:</label>
+                    <br>
+                    <div class="textbox">
+                        <input type="text" class=" text-box-default textbox-with-icon" placeholder="11/08/1989">
+                        <div class="textbox-icon "><i class="far fa-calendar"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="info">
+                    <label>Nơi cấp:</label>
+                    <br>
+                    <input type="text" placeholder="Tỉnh Bắc Giang">
+                </div>
+            </div>
+            <div>
+                <div class="info">
+                    <label>Email: (<i style="color: red; font-size: 15px;">*</i> )</label>
+                    <br>
+                    <input type="text" placeholder="abc@gmail.com">
+                </div>
+                <div class="info">
+                    <label>Số điện thoại: (<i style="color: red; font-size: 15px;">*</i> )</label>
+                    <br>
+                    <input type="text" placeholder="0962456526">
+                </div>
+            </div>
+            <div>
+                <div class="text-content">b.Thông tin liên hệ:</div>
+                <div class="tag"></div>
+            </div>
+            <div>
+                <div class="info">
+                    <label>Vị trí:</label>
+                    <br>
+                    <div class="combobox-info">
+                        <div class="combobox-input">Giám đốc</div>
+                        <button class="btn-combobox-info"><i class="fas fa-chevron-down"></i></button>
+                    </div>
+                </div>
+                <div class="info">
+                    <label>Phòng ban:</label>
+                    <br>
+                    <div class="combobox-info">
+                        <div class="combobox-input">Phòng nhân sự</div>
+                        <button class="btn-combobox-info"><i class="fas fa-chevron-down"></i></button>
+                    </div>
+                </div>
+                <div>
+                    <div class="info">
+                        <label>Mã số thuế cá nhân:</label>
+                        <br>
+                        <input type="text" placeholder="54227483739">
+                    </div>
+                    <div class="info">
+                        <label>Mức lương cơ bản: </label>
+                        <br>
+                        <input type="text" placeholder="28.000.000(VND)" class="text-align-right">
+                    </div>
+                </div>
+                <div>
+                    <div class="info">
+                        <label>Ngày gia nhập công ty:</label>
+                        <br>
+                        <div class="textbox">
+                            <input type="text" class=" text-box-default textbox-with-icon" placeholder="12/05/2015">
+                            <div class="textbox-icon "><i class="far fa-calendar"></i></div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <label>Tình trạng công việc:</label>
+                        <br>
+                        <div class="combobox-info">
+                            <div class="combobox-input">Đang làm việc</div>
+                            <button class="btn-combobox-info"><i class="fas fa-chevron-down"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-dialog">
+            <div class="bottom-sidebade">
+                <button class="btn-delete" id="btnDeleteOnClick">Hủy</button>
+                <div class="save">
+                    <i class="far fa-save" style="margin-left: 10px;"></i>
+                    <button class="btn-save">Lưu</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../content/font/fontawesome-5.15.1/js/all.min.js"></script>
+    <script src="../js/employee.js"></script>
+
+</body>
+
+</html>

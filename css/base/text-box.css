@@ -1,0 +1,42 @@
+.text-box-default {
+    height: 40px;
+    border: 1px solid #bbbbbb;
+    padding-left: 16px;
+    padding-right: 16px;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.text-box-default:focus {
+    border-color: #019160;
+}
+
+.textbox {
+    display: flex;
+    align-items: center;
+}
+
+.textbox-with-icon {
+    display: flex;
+    position: absolute;
+    flex-shrink: 0;
+}
+
+.textbox .textbox-icon {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ccc;
+    display: block;
+    margin-left: 16px;
+    margin-right: 8px;
+    flex-shrink: 0;
+    /*  cố định độ rộng */
+    z-index: 1;
+}
+
+.textbox input {
+    z-index: 0;
+    padding-left: 40px;
+}
